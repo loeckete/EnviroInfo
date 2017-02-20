@@ -1,0 +1,18 @@
+# 16 Feb 2017 EVRN 420/720 
+Today we are going to explore a couple of different approaches to 
+extracting (a.k.a., scraping) data from on-line sources. For 
+example tables or text.
+First we will work through an example posted on R-blogger to 
+scrape citation data from google scholar.  This example uses the
+rvest package, which depends on "Piping". 
+Go to help -> Cheatsheats -> Data Manipulation
+
+https://www.r-bloggers.com/google-scholar-scraping-with-rvest-package/
+
+KUfaculty = ".gsc_1usr_aff , .gsc_1usr_cby , .gsc_1usr_name a"
+library(rvest)
+library(ggplot2)
+
+KU = "https://scholar.google.com/citations?view_op=view_org&hl=en&org=13272385838766914177"
+
+
